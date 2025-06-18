@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clínica Veterinaria Vida Animal</title>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Sidebar (Ahora en la parte superior como navegación horizontal) -->
+<aside class="bg-green-800 text-white w-full z-40 py-4 px-6">
+  <div class="flex justify-between items-center">
+    <h2 class="text-2xl font-bold">Vida Animal</h2>
+    <nav class="flex space-x-6">
+      <a href="#" class="hover:bg-green-700 px-4 py-2 rounded"><i data-feather="home" class="inline w-5 h-5 mr-2"></i>Inicio</a>
+      <a href="#nosotros" class="hover:bg-green-700 px-4 py-2 rounded"><i data-feather="info" class="inline w-5 h-5 mr-2"></i>Nosotros</a>
+      <a href="#servicios" class="hover:bg-green-700 px-4 py-2 rounded"><i data-feather="heart" class="inline w-5 h-5 mr-2"></i>Servicios</a>
+      <a href="#testimonios" class="hover:bg-green-700 px-4 py-2 rounded"><i data-feather="message-circle" class="inline w-5 h-5 mr-2"></i>Testimonios</a>
+      <a href="#contacto" class="hover:bg-green-700 px-4 py-2 rounded"><i data-feather="mail" class="inline w-5 h-5 mr-2"></i>Contacto</a>
+    </nav>
+  </div>
+</aside>
+
+
+  <!-- Contenido principal -->
+  <div class="md:ml-64">
+    
+    <!-- Carrusel -->
+    <section class="my-6">
+      <div id="carouselExample" class="relative w-full" data-carousel="slide">
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="duration-700 ease-in-out" data-carousel-item>
+            <img src="imagen/per1.jpg" class="absolute block w-full h-full object-cover" alt="Perro feliz en la veterinaria" />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="imagen/per2.jpg" class="absolute block w-full h-full object-cover" alt="Gato descansando" />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="imagen/per3.jpg" class="absolute block w-full h-full object-cover" alt="Veterinario cuidando animal" />
+          </div>
+        </div>
+        <!-- Botones -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+            <svg class="w-4 h-4 text-white" viewBox="0 0 6 10"><path stroke="currentColor" stroke-width="2" d="M5 1 1 5l4 4"/></svg>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+            <svg class="w-4 h-4 text-white" viewBox="0 0 6 10"><path stroke="currentColor" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="bg-white py-12 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4 text-green-800">Sobre Nosotros</h2>
+        <p class="text-gray-700 text-lg">En <strong>Clínica Veterinaria Vida Animal</strong> nos dedicamos con pasión y compromiso al bienestar de tus mascotas. Nuestro equipo está formado por médicos veterinarios con amplia experiencia, tecnología de punta y un amor genuino por los animales.</p>
+        <p class="text-gray-700 mt-4 text-lg">Creemos que cada mascota es un miembro más de la familia, y por eso trabajamos día a día para brindar atención médica de calidad, cariño y respeto a cada uno de nuestros pacientes peludos.</p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-16 px-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 text-green-800">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold mb-3">Consulta Médica</h3>
+            <p class="text-gray-600">Diagnóstico, tratamiento y seguimiento personalizado para cada mascota.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold mb-3">Vacunación</h3>
+            <p class="text-gray-600">Calendario completo de vacunas para proteger a tus compañeros peludos.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold mb-3">Cirugías</h3>
+            <p class="text-gray-600">Procedimientos quirúrgicos seguros y supervisados por profesionales.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold mb-3">Estética y Baño</h3>
+            <p class="text-gray-600">Servicios de peluquería, baño, corte y limpieza general con productos especiales.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold mb-3">Emergencias 24/7</h3>
+            <p class="text-gray-600">Estamos disponibles en todo momento para atender emergencias veterinarias.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold mb-3">Tienda PetShop</h3>
+            <p class="text-gray-600">Alimentos, accesorios y juguetes de la mejor calidad para tu mascota.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="bg-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10 text-green-800">Testimonios</h2>
+        <div class="space-y-8">
+          <div class="bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">"Mi perrita Luna fue atendida con tanto amor que ahora no teme ir al veterinario. ¡Gracias por todo!"</p>
+            <span class="block mt-4 font-semibold text-gray-700">— Mariana R.</span>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow">
+            <p class="italic">"Una atención excelente, profesionales humanos y dedicados. 100% recomendados."</p>
+            <span class="block mt-4 font-semibold text-gray-700">— Carlos J.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gray-50 py-12 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Contáctanos</h2>
+        <p class="text-gray-700 text-lg">📍 Av. Siempre Viva 123, Ciudad Animal<br>📞 (123) 456-7890<br>✉️ contacto@vidanimal.com</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white text-center py-6">
+      <p>&copy; 2025 Clínica Veterinaria Vida Animal. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script>feather.replace()</script>
+</body>
+</html>
